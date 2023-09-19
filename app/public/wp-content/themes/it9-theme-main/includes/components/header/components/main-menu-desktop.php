@@ -18,7 +18,7 @@ $home_url = get_home_url();
             $menu_item_url = $menu_item->url;
         ?>
             <li>
-                <a class="text-midgray transition-all duration-500 ease-linear hover:text-jade" href="<?php echo esc_url($menu_item_url) ?>">
+                <a class="text-gray-600 transition-all duration-500 ease-linear hover:text-baltic" href="<?php echo esc_url($menu_item_url) ?>">
                     <?php echo esc_html($menu_item->title); ?>
                 </a>
             </li>
@@ -27,7 +27,7 @@ $home_url = get_home_url();
         ?>
     </ul>
 
-    <a class="bg-jade text-white py-4 px-10 rounded-full flex gap-3.5 items-center justify-center transition-all duration-500 ease-in hover:bg-transparent hover:border hover:text-jade hover:border-jade max-w-[250px]" href="/contato" target="_blank">
+    <a class="bg-baltic text-white py-4 px-10 rounded-full flex gap-3.5 items-center justify-center transition-all duration-500 ease-in hover:bg-transparent hover:border hover:text-darker hover:border-darker max-w-[250px]" href="/contato" target="_blank">
         <?php esc_html_e('Contato', 'it9-obrasoft') ?>
     </a>
 </div>
