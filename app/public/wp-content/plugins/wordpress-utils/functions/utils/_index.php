@@ -11,3 +11,4 @@ include(plugin_dir_path(__FILE__) . 'load-svg.php');
 include(plugin_dir_path(__FILE__) . 'include-class.php');
 include(plugin_dir_path(__FILE__) . 'register-menu.php');
 include(plugin_dir_path(__FILE__) . 'verify-abspath.php');
+include(plugin_dir_path(__FILE__) . 'get-image-link.php');
