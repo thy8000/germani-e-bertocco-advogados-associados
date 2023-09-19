@@ -1,0 +1,3 @@
+.main-menu-mobile-items.open {
+    @apply flex left-0;
+}

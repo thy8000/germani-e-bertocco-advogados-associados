@@ -1,0 +1,14 @@
+{
+  "name": "it9-theme",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "tailwind": "npx tailwindcss -i ./assets/css/_index.css -o ./assets/css/all.css --watch"
+  },
+  "author": "Thunay Moreira de Soares",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.3.3"
+  }
+}

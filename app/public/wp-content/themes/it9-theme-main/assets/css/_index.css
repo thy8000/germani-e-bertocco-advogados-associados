@@ -1,0 +1,4 @@
+@import url("standarts/_tailwind.css");
+@import url("standarts/container.css");
+
+@import url("components/header/main-menu-mobile.css");
