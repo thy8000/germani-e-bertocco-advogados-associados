@@ -23,7 +23,7 @@ module.exports = {
       darker: "#040404",
       baltic: "#27242A",
       emperor: "#525152",
-      downriver: "#0B0B50",
+      downriver: "#0B0B50"
     },
   },
   plugins: [],
