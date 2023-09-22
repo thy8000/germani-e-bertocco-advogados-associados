@@ -20,3 +20,5 @@ if (!defined('ABSPATH')) exit;
 
 <body <?php body_class(); ?>>
     <?php wp_utils_get_component('header/components/main-menu'); ?>
+
+    <main>

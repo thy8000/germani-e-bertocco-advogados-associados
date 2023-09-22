@@ -3,7 +3,9 @@
 if (!defined('ABSPATH')) exit;
 
 wp_footer();
+
 ?>
+</main>
 
 <footer>
     <div class="bg-white">
