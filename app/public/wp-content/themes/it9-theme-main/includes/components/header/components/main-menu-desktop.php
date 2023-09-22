@@ -27,7 +27,7 @@ $home_url = get_home_url();
         ?>
     </ul>
 
-    <a class="bg-baltic text-white py-4 px-10 rounded-full flex gap-3.5 items-center justify-center transition-all duration-500 ease-in hover:bg-transparent hover:border hover:text-darker hover:border-darker max-w-[250px]" href="/contato" target="_blank">
-        <?php esc_html_e('Contato', 'it9-obrasoft') ?>
+    <a class="button-solid-baltic" href="/contato" target="_blank">
+        <?php esc_html_e('Contato', 'it9') ?>
     </a>
 </div>

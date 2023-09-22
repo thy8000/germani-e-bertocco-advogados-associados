@@ -8,7 +8,7 @@ $hero_image = "background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 
 url(" . esc_url(get_field('home_hero_featured_image', 'option')) . ");";
 ?>
 
-<section class="front-page-hero bg-cover bg-no-repeat w-full" style="<?php echo $hero_image ?>">
+<section class="bg-cover bg-no-repeat w-full" style="<?php echo $hero_image ?>">
     <div class="custom-container">
         <div class="flex">
             <div class="py-[40vh]">
@@ -20,7 +20,7 @@ url(" . esc_url(get_field('home_hero_featured_image', 'option')) . ");";
                     <?php esc_html_e(get_field('home_hero_big_title', 'option')) ?>
                 </h2>
 
-                <a class="p-5 bg-transparent border border-white rounded text-white it9-transition hover:bg-white hover:text-gray-600" href="<?php echo esc_url(get_field('home_hero_link', 'option')) ?>">
+                <a class="button-outline-white" href="<?php echo esc_url(get_field('home_hero_link', 'option')) ?>">
                     <?php esc_html_e(get_field('home_hero_text', 'option')) ?>
                 </a>
             </div>
