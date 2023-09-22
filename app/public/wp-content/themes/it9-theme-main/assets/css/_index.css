@@ -3,3 +3,7 @@
 @import url("standarts/fonts.css");
 
 @import url("components/header/main-menu-mobile.css");
+
+.it9-transition{
+    @apply transition-all duration-[.5s] ease-in;
+}
