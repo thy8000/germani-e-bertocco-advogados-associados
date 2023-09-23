@@ -640,6 +640,10 @@ video {
   aspect-ratio: 286/281;
 }
 
+.aspect-\[1\/1\]{
+  aspect-ratio: 1/1;
+}
+
 .h-\[90px\]{
   height: 90px;
 }
