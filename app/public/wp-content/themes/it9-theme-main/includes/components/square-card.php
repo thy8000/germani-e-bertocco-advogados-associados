@@ -7,7 +7,7 @@ if (!defined('ABSPATH')) {
 ?>
 
 <div class="w-full flex flex-col justify-center items-center aspect-[286/281] bg-white">
-    <h2 class="text-6xl lg:text-4xl xl:text-6xl font-medium font-lato text-emperor">
+    <h2 class="text-6xl lg:text-4xl xl:text-6xl font-medium font-lato text-emperor italic">
         <?php esc_html_e($args['info']['big_title']) ?>
     </h2>
 
