@@ -28,7 +28,7 @@ function it9_create_page_content_fields()
         return;
     }
 
-    acf_add_local_field_group(array(
+    acf_add_local_field_group( array(
         'key' => 'group_650cef4b4bc6f',
         'title' => 'Página Inicial',
         'fields' => array(
@@ -351,6 +351,88 @@ function it9_create_page_content_fields()
                     ),
                 ),
             ),
+            array(
+                'key' => 'field_65106866cbd14',
+                'label' => 'Equipe',
+                'name' => '',
+                'aria-label' => '',
+                'type' => 'tab',
+                'instructions' => '',
+                'required' => 0,
+                'conditional_logic' => 0,
+                'wrapper' => array(
+                    'width' => '',
+                    'class' => '',
+                    'id' => '',
+                ),
+                'placement' => 'top',
+                'endpoint' => 0,
+            ),
+            array(
+                'key' => 'field_6510688fcbd15',
+                'label' => 'Imagem Destacada',
+                'name' => 'home_team_featured_image',
+                'aria-label' => '',
+                'type' => 'image',
+                'instructions' => '',
+                'required' => 1,
+                'conditional_logic' => 0,
+                'wrapper' => array(
+                    'width' => '',
+                    'class' => '',
+                    'id' => '',
+                ),
+                'return_format' => 'url',
+                'library' => 'all',
+                'min_width' => '',
+                'min_height' => '',
+                'min_size' => '',
+                'max_width' => '',
+                'max_height' => '',
+                'max_size' => '',
+                'mime_types' => '',
+                'preview_size' => 'medium',
+            ),
+            array(
+                'key' => 'field_651068b4cbd16',
+                'label' => 'Título Maior',
+                'name' => 'home_team_big_title',
+                'aria-label' => '',
+                'type' => 'textarea',
+                'instructions' => '',
+                'required' => 1,
+                'conditional_logic' => 0,
+                'wrapper' => array(
+                    'width' => '',
+                    'class' => '',
+                    'id' => '',
+                ),
+                'default_value' => '',
+                'maxlength' => '',
+                'rows' => '',
+                'placeholder' => '',
+                'new_lines' => '',
+            ),
+            array(
+                'key' => 'field_651068d2cbd17',
+                'label' => 'Título Menor',
+                'name' => 'home_team_small_title',
+                'aria-label' => '',
+                'type' => 'textarea',
+                'instructions' => '',
+                'required' => 1,
+                'conditional_logic' => 0,
+                'wrapper' => array(
+                    'width' => '',
+                    'class' => '',
+                    'id' => '',
+                ),
+                'default_value' => '',
+                'maxlength' => '',
+                'rows' => '',
+                'placeholder' => '',
+                'new_lines' => '',
+            ),
         ),
         'location' => array(
             array(
@@ -370,5 +452,5 @@ function it9_create_page_content_fields()
         'active' => true,
         'description' => '',
         'show_in_rest' => 0,
-    ));
+    ) );
 }
