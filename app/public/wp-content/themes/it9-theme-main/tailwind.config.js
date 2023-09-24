@@ -20,6 +20,7 @@ module.exports = {
       white: colors.white,
       gray: colors.gray,
       slate: colors.slate,
+      red: colors.red,
       gallery: "#EFEEEE",
       darker: "#040404",
       baltic: "#27242A",
