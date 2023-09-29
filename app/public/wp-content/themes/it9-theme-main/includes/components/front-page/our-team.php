@@ -7,10 +7,10 @@ if (!defined('ABSPATH')) {
 
 ?>
 
-<section class="bg-red-50 py-32">
+<section class="relative bg-red-50 py-32">
     <div class="custom-container">
-        <div class="flex gap-12">
-            <div class="w-1/2">
+        <div class="flex flex-col-reverse lg:flex-row gap-12">
+            <div class="w-full lg:w-1/2">
                 <h2 class="text-4xl font-medium text-baltic font-lato">
                     <?php esc_html_e(get_field('home_team_big_title', 'option')) ?>
                 </h2>
@@ -22,12 +22,12 @@ if (!defined('ABSPATH')) {
                 </h3>
             </div>
 
-            <div class="w-1/2">
+            <div class="w-full lg:w-1/2">
                 <img class="w-full aspect-[661/526] object-cover" src="<?php echo esc_url(get_field('home_team_featured_image', 'option')) ?>">
             </div>
         </div>
 
-        <ul class="grid grid-cols-2 gap-12">
+        <ul class="relative xl:absolute -bottom-[15%] bg-transparent xl:bg-orange-100 grid grid-cols-1 md:grid-cols-2 gap-12 w-full xl:w-[60%] xl:p-20 py-20">
             <?php
             // Get the list of lawyers
             $lawyers = get_posts([
@@ -42,7 +42,7 @@ if (!defined('ABSPATH')) {
                 // Loop through each lawyer
                 foreach ($lawyers as $lawyer) {
             ?>
-                    <div class="w-1/2">
+                    <div>
                         <?php wp_utils_get_component('our-team-card', [
                             'lawyer' => $lawyer,
                         ]) ?>
