@@ -1,0 +1,3 @@
+.service-card:hover .service-card-image{
+    @apply scale-125;
+}
