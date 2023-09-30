@@ -8,3 +8,7 @@
 .it9-transition{
     @apply transition-all duration-[.5s] ease-in;
 }
+
+body{
+    @apply bg-slate-100;
+}

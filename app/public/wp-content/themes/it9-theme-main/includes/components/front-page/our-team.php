@@ -7,11 +7,11 @@ if (!defined('ABSPATH')) {
 
 ?>
 
-<section class="relative bg-red-50 py-32">
+<section class="relative bg-slate-100 py-32">
     <div class="custom-container">
         <div class="flex flex-col-reverse lg:flex-row gap-12">
             <div class="w-full lg:w-1/2">
-                <h2 class="text-4xl font-medium text-baltic font-lato">
+                <h2 class="text-4xl font-black text-baltic font-lato">
                     <?php esc_html_e(get_field('home_team_big_title', 'option')) ?>
                 </h2>
 

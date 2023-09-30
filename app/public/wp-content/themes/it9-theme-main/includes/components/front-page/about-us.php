@@ -10,25 +10,25 @@ if (!defined('ABSPATH')) {
     <div class="custom-container">
         <div class="flex flex-col lg:flex-row gap-8">
             <div class="w-full lg:w-2/4">
-                <h2 class="text-4xl font-medium	text-baltic font-lato">
+                <h2 class="text-4xl font-black text-baltic font-lato">
                     <?php esc_html_e(get_field('home_about_us_big_title', 'option')) ?>
                 </h2>
 
                 <br>
 
-                <h3 class="max-w-sm text-2xl italic text-emperor font-light">
+                <h3 class="max-w-sm text-2xl italic text-gray-500 font-light">
                     <?php esc_html_e(get_field('home_about_us_small_title', 'option')) ?>
                 </h3>
 
                 <br>
 
-                <div class="text-lg text-baltic">
+                <div class="text-lg text-gray-500">
                     <?php echo get_field('home_about_us_description', 'option') ?>
                 </div>
 
                 <br>
 
-                <span class="text-xl font-bold text-baltic font-lato">
+                <span class="text-xl font-bold text-darker font-lato">
                     <?php esc_html_e(get_field('home_about_us_featured_text', 'option')) ?>
                 </span>
 
