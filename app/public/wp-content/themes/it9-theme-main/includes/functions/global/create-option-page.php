@@ -28,7 +28,7 @@ function it9_create_page_content_fields()
         return;
     }
 
-    acf_add_local_field_group( array(
+    acf_add_local_field_group(array(
         'key' => 'group_650cef4b4bc6f',
         'title' => 'Página Inicial',
         'fields' => array(
@@ -433,6 +433,63 @@ function it9_create_page_content_fields()
                 'placeholder' => '',
                 'new_lines' => '',
             ),
+            array(
+                'key' => 'field_651778f847645',
+                'label' => 'Serviços',
+                'name' => '',
+                'aria-label' => '',
+                'type' => 'tab',
+                'instructions' => '',
+                'required' => 0,
+                'conditional_logic' => 0,
+                'wrapper' => array(
+                    'width' => '',
+                    'class' => '',
+                    'id' => '',
+                ),
+                'placement' => 'top',
+                'endpoint' => 0,
+            ),
+            array(
+                'key' => 'field_6517790747646',
+                'label' => 'Texto Grande',
+                'name' => 'home_services_big_text',
+                'aria-label' => '',
+                'type' => 'textarea',
+                'instructions' => '',
+                'required' => 1,
+                'conditional_logic' => 0,
+                'wrapper' => array(
+                    'width' => '',
+                    'class' => '',
+                    'id' => '',
+                ),
+                'default_value' => '',
+                'maxlength' => '',
+                'rows' => '',
+                'placeholder' => '',
+                'new_lines' => '',
+            ),
+            array(
+                'key' => 'field_6517791d47647',
+                'label' => 'Texto Menor',
+                'name' => 'home_services_small_text',
+                'aria-label' => '',
+                'type' => 'textarea',
+                'instructions' => '',
+                'required' => 1,
+                'conditional_logic' => 0,
+                'wrapper' => array(
+                    'width' => '',
+                    'class' => '',
+                    'id' => '',
+                ),
+                'default_value' => '',
+                'maxlength' => '',
+                'rows' => '',
+                'placeholder' => '',
+                'new_lines' => 'br',
+            ),
         ),
         'location' => array(
             array(
@@ -452,5 +509,5 @@ function it9_create_page_content_fields()
         'active' => true,
         'description' => '',
         'show_in_rest' => 0,
-    ) );
+    ));
 }
