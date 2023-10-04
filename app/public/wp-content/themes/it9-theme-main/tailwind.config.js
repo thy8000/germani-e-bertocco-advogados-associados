@@ -23,6 +23,7 @@ module.exports = {
       red: colors.red,
       orange: colors.orange,
       amber: colors.amber,
+      cyan: colors.cyan,
       gallery: "#EFEEEE",
       darker: "#040404",
       baltic: "#27242A",

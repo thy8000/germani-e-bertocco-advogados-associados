@@ -27,7 +27,7 @@ if (!defined('ABSPATH')) {
             </div>
         </div>
 
-        <ul class="relative xl:absolute -bottom-[15%] bg-transparent xl:bg-orange-100 grid grid-cols-1 md:grid-cols-2 gap-12 w-full xl:w-[60%] xl:p-20 py-20">
+        <ul class="relative xl:absolute -bottom-[15%] bg-none xl:bg-orange-100 grid grid-cols-1 md:grid-cols-2 gap-12 w-full xl:w-[60%] xl:p-20 py-20">
             <?php
             // Get the list of lawyers
             $lawyers = get_posts([
