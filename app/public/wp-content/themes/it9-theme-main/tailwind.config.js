@@ -24,6 +24,7 @@ module.exports = {
       orange: colors.orange,
       amber: colors.amber,
       cyan: colors.cyan,
+      emerald: colors.emerald,
       gallery: "#EFEEEE",
       darker: "#040404",
       baltic: "#27242A",

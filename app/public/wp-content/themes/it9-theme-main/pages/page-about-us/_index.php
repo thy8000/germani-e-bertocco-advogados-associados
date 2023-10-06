@@ -11,4 +11,8 @@ wp_utils_get_component('page-header', [
     'page_name' => esc_html__('Sobre nós', 'it9'),
 ]);
 
+wp_utils_get_component('front-page/about-us');
+
+wp_utils_get_component('about-us/learn-about-us');
+
 wp_utils_get_component('footer/_index');

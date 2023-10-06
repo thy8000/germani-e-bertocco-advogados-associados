@@ -711,12 +711,12 @@ function it9_create_about_us_content_fields()
     if (!function_exists('acf_add_local_field_group')) {
         return;
     }
-    
-    acf_add_local_field_group([
+
+    acf_add_local_field_group(array(
         'key' => 'group_651f5b86ce63b',
         'title' => 'Sobre Nós',
-        'fields' => [
-            [
+        'fields' => array(
+            array(
                 'key' => 'field_651f5b87025f2',
                 'label' => 'Cabeçalho da Página',
                 'name' => '',
@@ -725,28 +725,28 @@ function it9_create_about_us_content_fields()
                 'instructions' => '',
                 'required' => 0,
                 'conditional_logic' => 0,
-                'wrapper' => [
+                'wrapper' => array(
                     'width' => '',
                     'class' => '',
                     'id' => '',
-                ],
+                ),
                 'placement' => 'top',
                 'endpoint' => 0,
-            ],
-            [
+            ),
+            array(
                 'key' => 'field_651f5ba0025f3',
                 'label' => 'Imagem Destacada',
                 'name' => 'about_us_page_header_featured_image',
                 'aria-label' => '',
                 'type' => 'image',
                 'instructions' => '',
-                'required' => 0,
+                'required' => 1,
                 'conditional_logic' => 0,
-                'wrapper' => [
+                'wrapper' => array(
                     'width' => '',
                     'class' => '',
                     'id' => '',
-                ],
+                ),
                 'return_format' => 'url',
                 'library' => 'all',
                 'min_width' => '',
@@ -757,17 +757,139 @@ function it9_create_about_us_content_fields()
                 'max_size' => '',
                 'mime_types' => '',
                 'preview_size' => 'medium',
-            ],
-        ],
-        'location' => [
-            [
-                [
+            ),
+            array(
+                'key' => 'field_651f63aeb5e2f',
+                'label' => 'Aprenda Sobre Nós',
+                'name' => '',
+                'aria-label' => '',
+                'type' => 'tab',
+                'instructions' => '',
+                'required' => 0,
+                'conditional_logic' => 0,
+                'wrapper' => array(
+                    'width' => '',
+                    'class' => '',
+                    'id' => '',
+                ),
+                'placement' => 'top',
+                'endpoint' => 0,
+            ),
+            array(
+                'key' => 'field_651f63c5b5e30',
+                'label' => 'Imagem Destacada',
+                'name' => 'about_us_learn_about_us_featured_image',
+                'aria-label' => '',
+                'type' => 'image',
+                'instructions' => '',
+                'required' => 1,
+                'conditional_logic' => 0,
+                'wrapper' => array(
+                    'width' => '',
+                    'class' => '',
+                    'id' => '',
+                ),
+                'return_format' => 'url',
+                'library' => 'all',
+                'min_width' => '',
+                'min_height' => '',
+                'min_size' => '',
+                'max_width' => '',
+                'max_height' => '',
+                'max_size' => '',
+                'mime_types' => '',
+                'preview_size' => 'medium',
+            ),
+            array(
+                'key' => 'field_651f63dfb5e31',
+                'label' => 'Etiqueta da Imagem',
+                'name' => 'about_us_learn_about_us_image_label',
+                'aria-label' => '',
+                'type' => 'textarea',
+                'instructions' => '',
+                'required' => 1,
+                'conditional_logic' => 0,
+                'wrapper' => array(
+                    'width' => '',
+                    'class' => '',
+                    'id' => '',
+                ),
+                'default_value' => '',
+                'maxlength' => '',
+                'rows' => '',
+                'placeholder' => '',
+                'new_lines' => '',
+            ),
+            array(
+                'key' => 'field_651f642db5e35',
+                'label' => 'Título Maior sob Título Menor',
+                'name' => 'about_us_learn_about_us_big_title_label',
+                'aria-label' => '',
+                'type' => 'textarea',
+                'instructions' => '',
+                'required' => 1,
+                'conditional_logic' => 0,
+                'wrapper' => array(
+                    'width' => '',
+                    'class' => '',
+                    'id' => '',
+                ),
+                'default_value' => '',
+                'maxlength' => '',
+                'rows' => '',
+                'placeholder' => '',
+                'new_lines' => '',
+            ),
+            array(
+                'key' => 'field_651f63f2b5e32',
+                'label' => 'Título Maior',
+                'name' => 'about_us_learn_about_us_big_title',
+                'aria-label' => '',
+                'type' => 'textarea',
+                'instructions' => '',
+                'required' => 1,
+                'conditional_logic' => 0,
+                'wrapper' => array(
+                    'width' => '',
+                    'class' => '',
+                    'id' => '',
+                ),
+                'default_value' => '',
+                'maxlength' => '',
+                'rows' => '',
+                'placeholder' => '',
+                'new_lines' => '',
+            ),
+            array(
+                'key' => 'field_651f6400b5e33',
+                'label' => 'Título Menor',
+                'name' => 'about_us_learn_about_us_small_title',
+                'aria-label' => '',
+                'type' => 'textarea',
+                'instructions' => '',
+                'required' => 1,
+                'conditional_logic' => 0,
+                'wrapper' => array(
+                    'width' => '',
+                    'class' => '',
+                    'id' => '',
+                ),
+                'default_value' => '',
+                'maxlength' => '',
+                'rows' => '',
+                'placeholder' => '',
+                'new_lines' => '',
+            ),
+        ),
+        'location' => array(
+            array(
+                array(
                     'param' => 'options_page',
                     'operator' => '==',
                     'value' => 'page-content',
-                ],
-            ],
-        ],
+                ),
+            ),
+        ),
         'menu_order' => 0,
         'position' => 'normal',
         'style' => 'default',
@@ -777,5 +899,5 @@ function it9_create_about_us_content_fields()
         'active' => true,
         'description' => '',
         'show_in_rest' => 0,
-    ]);
+    ));
 }

@@ -7,7 +7,7 @@ if (!defined('ABSPATH')) {
 $background_image_style = "background: linear-gradient(rgba(55, 55, 63, 0.7), rgba(55, 55, 63, 0.7)), url({$args['featured_image']}), no-repeat center center;"
 ?>
 
-<div class="container-fluid bg-page-header !bg-no-repeat !bg-center" style="margin-bottom: 90px; <?php echo esc_attr($background_image_style) ?>">
+<div class="container-fluid bg-page-header !bg-no-repeat !bg-center" style="<?php echo esc_attr($background_image_style) ?>">
     <div class="container">
         <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 400px">
             <h3 class="display-3 text-white text-uppercase font-lato">
