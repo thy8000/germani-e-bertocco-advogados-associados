@@ -704,3 +704,78 @@ function it9_create_page_content_fields()
         'show_in_rest' => 0,
     ));
 }
+
+add_action('init', 'it9_create_about_us_content_fields');
+function it9_create_about_us_content_fields()
+{
+    if (!function_exists('acf_add_local_field_group')) {
+        return;
+    }
+    
+    acf_add_local_field_group([
+        'key' => 'group_651f5b86ce63b',
+        'title' => 'Sobre Nós',
+        'fields' => [
+            [
+                'key' => 'field_651f5b87025f2',
+                'label' => 'Cabeçalho da Página',
+                'name' => '',
+                'aria-label' => '',
+                'type' => 'tab',
+                'instructions' => '',
+                'required' => 0,
+                'conditional_logic' => 0,
+                'wrapper' => [
+                    'width' => '',
+                    'class' => '',
+                    'id' => '',
+                ],
+                'placement' => 'top',
+                'endpoint' => 0,
+            ],
+            [
+                'key' => 'field_651f5ba0025f3',
+                'label' => 'Imagem Destacada',
+                'name' => 'about_us_page_header_featured_image',
+                'aria-label' => '',
+                'type' => 'image',
+                'instructions' => '',
+                'required' => 0,
+                'conditional_logic' => 0,
+                'wrapper' => [
+                    'width' => '',
+                    'class' => '',
+                    'id' => '',
+                ],
+                'return_format' => 'url',
+                'library' => 'all',
+                'min_width' => '',
+                'min_height' => '',
+                'min_size' => '',
+                'max_width' => '',
+                'max_height' => '',
+                'max_size' => '',
+                'mime_types' => '',
+                'preview_size' => 'medium',
+            ],
+        ],
+        'location' => [
+            [
+                [
+                    'param' => 'options_page',
+                    'operator' => '==',
+                    'value' => 'page-content',
+                ],
+            ],
+        ],
+        'menu_order' => 0,
+        'position' => 'normal',
+        'style' => 'default',
+        'label_placement' => 'top',
+        'instruction_placement' => 'label',
+        'hide_on_screen' => '',
+        'active' => true,
+        'description' => '',
+        'show_in_rest' => 0,
+    ]);
+}
