@@ -14,6 +14,18 @@ if (!defined('ABSPATH')) exit;
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <?php
+
+    if(is_page('about-us')){
+
+    ?>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <?php
+    
+    }
+
+    ?>
+
     <title><?php wp_title(); ?></title>
 
     <?php wp_head(); ?>
