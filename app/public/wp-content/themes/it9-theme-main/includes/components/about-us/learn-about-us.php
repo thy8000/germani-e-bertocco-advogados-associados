@@ -12,7 +12,7 @@ if (!defined('ABSPATH')) {
             <div class="col-xl-5">
                 <img class="img-fluid rounded object-cover aspect-square" src="<?php echo esc_url(get_field('about_us_learn_about_us_featured_image', 'option')) ?>" alt="">
             </div>
-            <div class="col-xl-7 mt-4 mt-xl-0">
+            <div class="col-xl-7 mt-4 mt-xl-0 xl:max-w-[800px]">
                 <h6 class="mb-3 font-lato text-uppercase text-base font-medium text-baltic">
                     <?php esc_html_e(get_field('about_us_learn_about_us_big_title_label', 'option')) ?>
                 </h6>

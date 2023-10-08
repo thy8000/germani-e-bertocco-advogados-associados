@@ -16,7 +16,7 @@ if (!defined('ABSPATH')) exit;
 
     <?php
 
-    if(is_page('about-us')){
+    if(!is_home()){
 
     ?>
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">

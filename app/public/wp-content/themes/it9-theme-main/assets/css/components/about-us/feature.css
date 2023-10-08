@@ -1,0 +1,5 @@
+@media (min-width: 992px) {
+    .feature-text {
+        margin-left: -100px;
+    }
+}

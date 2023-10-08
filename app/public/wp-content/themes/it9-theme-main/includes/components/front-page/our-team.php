@@ -45,6 +45,7 @@ if (!defined('ABSPATH')) {
                     <div>
                         <?php wp_utils_get_component('our-team-card', [
                             'lawyer' => $lawyer,
+                            'type'   => 'horizontal',
                         ]) ?>
                     </div>
             <?php

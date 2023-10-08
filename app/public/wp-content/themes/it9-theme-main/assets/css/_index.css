@@ -8,6 +8,10 @@
 @import url("components/front-page/recent-posts.css");
 @import url("components/front-page/cta.css");
 
+@import url("components/about-us/feature.css");
+
+@import url("components/equipe/attorneys.css");
+
 @import url("components/service-card.css");
 
 .it9-transition{
