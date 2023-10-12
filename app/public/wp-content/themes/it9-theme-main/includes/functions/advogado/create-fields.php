@@ -11,6 +11,7 @@ function it9_create_advogado_fields()
         return;
     }
 
+    /*
     acf_add_local_field_group(array(
         'key' => 'group_6510729c2df29',
         'title' => 'Informações do Advogado',
@@ -63,4 +64,5 @@ function it9_create_advogado_fields()
         'description' => '',
         'show_in_rest' => 0,
     ));
+    */
 }
