@@ -10,7 +10,7 @@ $background_image_style = "background: linear-gradient(rgba(55, 55, 63, 0.7), rg
 <div class="container-fluid bg-page-header !bg-no-repeat !bg-center" style="<?php echo esc_attr($background_image_style) ?>">
     <div class="container">
         <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 400px">
-            <h3 class="display-3 text-white text-uppercase font-lato">
+            <h3 class="display-3 text-white text-uppercase text-center font-lato pb-4">
                 <?php esc_html_e($args['page_name']) ?>
             </h3>
 

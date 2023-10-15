@@ -4,16 +4,8 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-$services = get_posts([
-    'post_type' => 'service',
-    'posts_per_page' => 6,
-    'order' => 'DESC',
-    'orderby' => 'date',
-    'post_status' => 'publish',
-]);
-
-if (empty($services)) {
-    return;
+if (empty(get_posts(['post_type' => 'service']))) {
+    exit;
 }
 
 ?>
@@ -30,17 +22,11 @@ if (empty($services)) {
             </span>
         </div>
 
-        <ul class="mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-            <?php
-
-            foreach ($services as $service) {
-                wp_utils_get_component('service-card', [
-                    'service' => $service,
-                ]);
-            }
-
-            ?>
-        </ul>
+        <?php
+            wp_utils_get_component('services-list', [
+                'post_per_page' => 6,
+            ]);
+        ?>
 
         <div class="flex justify-center">
             <a class="button-solid-baltic mt-8 !max-w-[500px]" href="<?php echo esc_url('/services') ?>">
