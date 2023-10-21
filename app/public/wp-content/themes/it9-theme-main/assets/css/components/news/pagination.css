@@ -1,0 +1,7 @@
+.page-numbers {
+    @apply font-lato border border-darker text-darker py-[8px] px-[16px] rounded-full
+}
+
+.page-numbers.current {
+    @apply bg-darker text-white font-bold
+}

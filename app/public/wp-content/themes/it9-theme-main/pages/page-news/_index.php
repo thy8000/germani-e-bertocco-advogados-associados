@@ -12,11 +12,12 @@ wp_utils_get_component('page-header', [
 ]);
 
 
-$posts = get_posts([
-    'post_type' => 'post',
+$posts = new WP_Query([
+    'paged'          => $paged,
+    'post_type'      => 'post',
     'posts_per_page' => 12,
-    'order' => 'DESC',
-    'orderby' => 'date',
+    'order'          => 'DESC',
+    'orderby'        => 'date',
 ]);
 
 ?>
@@ -27,7 +28,7 @@ $posts = get_posts([
 
             <?php
 
-            if (empty($posts)) {
+            if (!$posts->have_posts()) {
 
             ?>
 
@@ -39,16 +40,28 @@ $posts = get_posts([
                     <?php esc_html_e('Ir para home', 'it9') ?>
                 </a>
 
-                <?php
+            <?php
 
             } else {
-                foreach ($posts as $post) {
+                while ($posts->have_posts()) {
+                    $posts->the_post();
+
                     wp_utils_get_component('post-card', [
-                        'post' => $post,
+                        'post' => get_post(),
                     ]);
                 }
             }
 
+            ?>
+        </div>
+
+        <div class="flex gap-4 mb-5">
+            <?php
+            echo paginate_links([
+                'total'      => $posts->max_num_pages,
+                'prev_text'  => '<',
+                'next_text' => '>',
+            ]);
             ?>
         </div>
     </div>
