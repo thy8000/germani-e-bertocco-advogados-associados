@@ -1,0 +1,11 @@
+[22-Oct-2023 18:23:57 UTC] PHP Fatal error:  Uncaught TypeError: array_map(): Argument #2 ($array) must be of type array, int given in C:\Users\ACER\Documents\IT9\Local\germani-e-bertocco-advogados-associados\app\public\wp-includes\class-wp-query.php:2205
+Stack trace:
+#0 C:\Users\ACER\Documents\IT9\Local\germani-e-bertocco-advogados-associados\app\public\wp-includes\class-wp-query.php(2205): array_map('absint', 138)
+#1 C:\Users\ACER\Documents\IT9\Local\germani-e-bertocco-advogados-associados\app\public\wp-includes\class-wp-query.php(3800): WP_Query->get_posts()
+#2 C:\Users\ACER\Documents\IT9\Local\germani-e-bertocco-advogados-associados\app\public\wp-includes\post.php(2441): WP_Query->query(Array)
+#3 C:\Users\ACER\Documents\IT9\Local\germani-e-bertocco-advogados-associados\app\public\wp-content\themes\it9-theme-main\pages\single\_index.php(21): get_posts(Array)
+#4 C:\Users\ACER\Documents\IT9\Local\germani-e-bertocco-advogados-associados\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\ACER\\D...')
+#5 C:\Users\ACER\Documents\IT9\Local\germani-e-bertocco-advogados-associados\app\public\wp-blog-header.php(19): require_once('C:\\Users\\ACER\\D...')
+#6 C:\Users\ACER\Documents\IT9\Local\germani-e-bertocco-advogados-associados\app\public\index.php(17): require('C:\\Users\\ACER\\D...')
+#7 {main}
+  thrown in C:\Users\ACER\Documents\IT9\Local\germani-e-bertocco-advogados-associados\app\public\wp-includes\class-wp-query.php on line 2205

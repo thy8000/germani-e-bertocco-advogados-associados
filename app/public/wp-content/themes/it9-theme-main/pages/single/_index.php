@@ -13,6 +13,14 @@ wp_utils_get_component('page-header', [
     'page_name' => get_the_title(),
 ]);
 
+$current_category = get_the_category($post)[0] ?? '';
+
+$related_posts = get_posts([
+    'category__in' => !empty($current_category) ? [$current_category->term_id] : [],
+    'post__not_in' => [get_the_ID($post)],
+    'posts_per_page' => 3,
+]);
+
 ?>
 
 <section class="section-sm bg-gray">
@@ -76,17 +84,46 @@ wp_utils_get_component('page-header', [
             </div>
 
             <!-- blog contect -->
-            <div class="col-12 mt-4 mb-5">
-                <h1 class="pb-3 font-bold text-4xl text-darker font-lato">
+            <div class="col-12 mb-5">
+                <h1 class="pt-4 text-5xl font-bold text-darker font-lato">
                     <?php esc_html_e(get_the_title($post)) ?>
                 </h1>
 
-                <?php the_content(); ?>
+                <div class="post-content">
+                    <?php the_content(); ?>
+                </div>
             </div>
         </div>
     </div>
 </section>
 
 <?php
+
+if (!empty($related_posts)) {
+
+?>
+    <section class="section">
+        <div class="custom-container">
+            <div class="row flex-wrap mt-5">
+                <div class="py-5 col-12 font-lato text-darker text-3xl font-bold">
+                    <?php esc_html_e('Posts Relacionados', 'it9'); ?>
+                </div>
+
+                <?php
+
+                foreach ($related_posts as $related_post) {
+                    wp_utils_get_component('post-card', [
+                        'post' => $related_post,
+                    ]);
+                }
+
+                ?>
+            </div>
+        </div>
+    </section>
+<?php
+
+}
+
 
 wp_utils_get_component('footer/_index');

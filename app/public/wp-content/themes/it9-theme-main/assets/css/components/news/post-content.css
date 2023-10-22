@@ -1,0 +1,89 @@
+.single-post .post-content h1,
+.single-post .post-content h2,
+.single-post .post-content h3,
+.single-post .post-content h4,
+.single-post .post-content h5,
+.single-post .post-content h6,
+.single-post .post-content p {
+    padding: 0.5rem 0;
+}
+
+.single-post .post-content h1,
+.single-post .post-content h2,
+.single-post .post-content h3,
+.single-post .post-content h4,
+.single-post .post-content h5,
+.single-post .post-content h6 {
+    @apply font-lato font-bold text-darker;
+}
+
+.single-post .post-content p {
+    @apply text-base text-gray-500;
+}
+
+.single-post .post-content h6 {
+    @apply text-lg;
+}
+
+.single-post .post-content h5 {
+    @apply text-xl;
+}
+
+.single-post .post-content h4 {
+    @apply text-2xl;
+}
+
+.single-post .post-content h3 {
+    @apply text-3xl;
+}
+
+.single-post .post-content h2 {
+    @apply text-4xl;
+}
+
+.single-post .post-content h2 {
+    @apply text-5xl;
+}
+
+.single-post .post-content img {
+    width: 100%;
+    max-width: 880px;
+    aspect-ratio: 880/500;
+    object-fit: cover;
+}
+
+.single-post .post-content .wp-element-caption {
+    @apply text-sm text-darker italic;
+}
+
+.single-post .post-content ul {
+    @apply text-gray-500;
+
+    list-style: disc;
+    padding: 0.5rem 50px;
+}
+
+.single-post .post-content ul li {
+    padding: 0.25rem 0;
+}
+
+.single-post .post-content .wp-block-quote {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.single-post .post-content .wp-block-quote p {
+    @apply italic text-2xl font-lato;
+}
+
+.single-post .post-content .wp-block-quote cite {
+    @apply italic text-sm font-lato;
+}
+
+.single-post .post-content .wp-block-quote p:before,
+.single-post .post-content .wp-block-quote p:after {
+    @apply text-gray-500 italic;
+    content: '"';
+}
