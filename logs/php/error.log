@@ -9,3 +9,7 @@ Stack trace:
 #6 C:\Users\ACER\Documents\IT9\Local\germani-e-bertocco-advogados-associados\app\public\index.php(17): require('C:\\Users\\ACER\\D...')
 #7 {main}
   thrown in C:\Users\ACER\Documents\IT9\Local\germani-e-bertocco-advogados-associados\app\public\wp-includes\class-wp-query.php on line 2205
+[24-Oct-2023 02:15:18 UTC] PHP Warning:  Undefined array key "type" in C:\Users\ACER\Documents\IT9\Local\germani-e-bertocco-advogados-associados\app\public\wp-content\themes\it9-theme-main\includes\components\services-list.php on line 15
+[24-Oct-2023 02:16:18 UTC] PHP Warning:  Undefined array key "type" in C:\Users\ACER\Documents\IT9\Local\germani-e-bertocco-advogados-associados\app\public\wp-content\themes\it9-theme-main\includes\components\services-list.php on line 15
+[24-Oct-2023 02:26:59 UTC] PHP Warning:  Undefined array key "type" in C:\Users\ACER\Documents\IT9\Local\germani-e-bertocco-advogados-associados\app\public\wp-content\themes\it9-theme-main\includes\components\services-list.php on line 15
+[24-Oct-2023 02:28:54 UTC] PHP Warning:  Undefined array key "type" in C:\Users\ACER\Documents\IT9\Local\germani-e-bertocco-advogados-associados\app\public\wp-content\themes\it9-theme-main\includes\components\services-list.php on line 15

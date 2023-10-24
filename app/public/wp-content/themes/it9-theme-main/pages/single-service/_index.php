@@ -27,7 +27,7 @@ $services_list = get_posts([
 
         <div class="row gy-5">
 
-            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="col-lg-4">
 
                 <div class="service-box">
                     <h4>

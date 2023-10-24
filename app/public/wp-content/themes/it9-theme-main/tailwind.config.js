@@ -33,4 +33,10 @@ module.exports = {
     },
   },
   plugins: [],
+  safelist: [
+    'lg:grid-cols-4',
+    'lg:grid-cols-3',
+    'grid-cols-4',
+    'grid-cols-3',
+  ]
 };

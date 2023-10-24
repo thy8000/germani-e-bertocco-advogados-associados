@@ -12,11 +12,15 @@ $services = get_posts([
     'post_status' => 'publish',
 ]);
 
-$grid_template_cols = $args['type'] === 'fourth' ? 'grid-cols-4' : 'grid-cols-3';
+$grid_template_cols = 'lg:grid-cols-3';
+
+if (!empty($args['type'])) {
+    $grid_template_cols = $args['type'] === 'fourth' ? 'lg:grid-cols-4' : 'lg:grid-cols-3';
+}
 
 ?>
 
-<ul class="mt-20 grid grid-cols-1 md:grid-cols-2 lg:<?php echo esc_attr($grid_template_cols) ?> gap-10">
+<ul class="mt-20 grid grid-cols-1 md:grid-cols-2 <?php esc_attr_e($grid_template_cols) ?> gap-10">
     <?php
 
     foreach ($services as $service) {

@@ -125,5 +125,6 @@ if (!empty($related_posts)) {
 
 }
 
+wp_utils_get_component('front-page/cta');
 
 wp_utils_get_component('footer/_index');
