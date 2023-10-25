@@ -5,3 +5,29 @@
 .button-outline-white {
     @apply p-5 bg-transparent border border-white rounded text-white it9-transition hover:bg-white hover:text-gray-600;
 }
+
+/*
+.button-solid-baltic {
+    display: flex;
+    max-width: 250px;
+    align-items: center;
+    justify-content: center;
+    gap: 0.875rem;
+    border-radius: 9999px;
+    --tw-bg-opacity: 1;
+    background-color: rgb(39 36 42 / var(--tw-bg-opacity));
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity));
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 500ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+}
+*/
+.wpforms-submit {
+    @apply !bg-baltic !text-white !py-4 !px-10 !rounded-full flex gap-3.5 items-center justify-center !transition-all !duration-500 !ease-in hover:!bg-transparent hover:!border hover:!text-darker hover:!border-darker max-w-[250px];
+}

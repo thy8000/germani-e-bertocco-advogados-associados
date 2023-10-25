@@ -58,7 +58,7 @@ $services_list = get_posts([
                         <?php esc_html_e('Precisa de ajuda ? Entre em contato conosco e agende uma consulta!', 'it9') ?>
                     </h4>
 
-                    <a class="button-solid-baltic mt-3" href="/contato" target="_blank">
+                    <a class="button-solid-baltic mt-3" href="/contact" target="_blank">
                         Contato 
                     </a>
                 </div>

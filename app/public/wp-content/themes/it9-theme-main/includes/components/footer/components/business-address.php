@@ -1,6 +1,6 @@
 <?php
 
-if(!defined('ABSPATH')) exit;
+if (!defined('ABSPATH')) exit;
 
 $business_address = [
     'address' => [
@@ -18,16 +18,16 @@ $business_address = [
 ];
 ?>
 
-<div class="flex flex-col gap-4">
-    <?php
-    foreach($business_address as $address){
-    ?>
-    <span class="text-midgray">
-        <a class="hover:text-jade text-midgray transition-all duration-500 ease-linear" href="<?php echo $address['link'] ?>" target="_blank">
-            <?php echo $address['label'] ?>
-        </a>
-    </span>
-    <?php
-    }
-    ?>
+<div class="flex flex-col gap-2">
+    <a href="tel:+<?php esc_attr_e(str_replace(array('(', ')', '-', ' '), '', get_field('contact_phone', 'option'))) ?>" class="d-block text-normal text-darker opacity-100 hover:opacity-60 hover:text-darker transition-all ease-out duration-500 [line-break:anywhere]" target="_blank">
+        <?php esc_html_e(get_field('contact_phone', 'option')) ?>
+    </a>
+
+    <a href="mailto:<?php esc_attr_e(get_field('contact_mail', 'option')) ?>" class="d-block text-normal text-darker opacity-100 hover:opacity-60 hover:text-darker transition-all ease-out duration-500 [line-break:anywhere]" target="_blank">
+        <?php esc_html_e(get_field('contact_mail', 'option')) ?>
+    </a>
+
+    <a href="<?php esc_attr_e(get_field('contact_address_link', 'option')) ?>" class="d-block text-normal text-darker opacity-100 hover:opacity-60 hover:text-darker transition-all ease-out duration-500 [line-break:anywhere]" target="_blank">
+        <?php esc_html_e(get_field('contact_address', 'option')) ?>
+    </a>
 </div>

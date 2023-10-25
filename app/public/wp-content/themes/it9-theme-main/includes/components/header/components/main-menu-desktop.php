@@ -27,7 +27,7 @@ $home_url = get_home_url();
         ?>
     </ul>
 
-    <a class="button-solid-baltic" href="/contato" target="_blank">
+    <a class="button-solid-baltic" href="/contact" target="_blank">
         <?php esc_html_e('Contato', 'it9') ?>
     </a>
 </div>

@@ -705,6 +705,10 @@ video {
   margin-top: 2rem;
 }
 
+.mb-1{
+  margin-bottom: 0.25rem;
+}
+
 .line-clamp-3{
   overflow: hidden;
   display: -webkit-box;
@@ -1365,6 +1369,10 @@ video {
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
 
+.\[line-break\:anywhere\]{
+  line-break: anywhere;
+}
+
 .custom-container{
   margin-left: auto;
   margin-right: auto;
@@ -1454,6 +1462,59 @@ body {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
   color: rgb(75 85 99 / var(--tw-text-opacity));
+}
+
+/*
+.button-solid-baltic {
+    display: flex;
+    max-width: 250px;
+    align-items: center;
+    justify-content: center;
+    gap: 0.875rem;
+    border-radius: 9999px;
+    --tw-bg-opacity: 1;
+    background-color: rgb(39 36 42 / var(--tw-bg-opacity));
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity));
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 500ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+}
+*/
+
+.wpforms-submit{
+  display: flex;
+  max-width: 250px;
+  align-items: center;
+  justify-content: center;
+  gap: 0.875rem;
+  border-radius: 9999px !important;
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(39 36 42 / var(--tw-bg-opacity)) !important;
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
+  padding-left: 2.5rem !important;
+  padding-right: 2.5rem !important;
+  --tw-text-opacity: 1 !important;
+  color: rgb(255 255 255 / var(--tw-text-opacity)) !important;
+  transition-property: all !important;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
+  transition-duration: 500ms !important;
+  transition-timing-function: cubic-bezier(0.4, 0, 1, 1) !important;
+}
+
+.wpforms-submit:hover{
+  border-width: 1px !important;
+  --tw-border-opacity: 1 !important;
+  border-color: rgb(4 4 4 / var(--tw-border-opacity)) !important;
+  background-color: transparent !important;
+  --tw-text-opacity: 1 !important;
+  color: rgb(4 4 4 / var(--tw-text-opacity)) !important;
 }
 
 .main-menu-mobile-items.open{
@@ -2089,6 +2150,11 @@ body{
   color: rgb(39 36 42 / var(--tw-text-opacity));
 }
 
+.hover\:text-darker:hover{
+  --tw-text-opacity: 1;
+  color: rgb(4 4 4 / var(--tw-text-opacity));
+}
+
 .hover\:text-gray-500:hover{
   --tw-text-opacity: 1;
   color: rgb(107 114 128 / var(--tw-text-opacity));
@@ -2096,6 +2162,10 @@ body{
 
 .hover\:opacity-50:hover{
   opacity: 0.5;
+}
+
+.hover\:opacity-60:hover{
+  opacity: 0.6;
 }
 
 .hover\:opacity-90:hover{
